@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Card } from 'react-bootstrap'
 import back from './logo/b.png'
 import './home.css'
 import photo from './bio.png'
@@ -18,6 +19,14 @@ export default class Home extends Component {
         <img className="bio" src={photo} alt="Logo" />
         <p class="home"> My name is Daniil Gofman</p>
         <p class="home"> I'm a Software Engineer</p>
+        <h3 align="center">Education</h3>
+        <Card>
+            <Card.Body>
+              <p class="text-start"> Computer Science	2019 — Present (3rd year)</p>
+              <p class="text-start"> National Research Nuclear University MEPHI</p>
+              <p class="text-center"> Key Courses: Data Structures and Algorithms, Languages of Programming, Object-Oriented Programming, Databases, Mathematical Statistics, Linear Algebra & Multivariable Equations, Integrals & Differential Equations, Design of Information Systems, GPA(86,625/100)</p>
+            </Card.Body>
+        </Card>
       </div>
     )
   }
