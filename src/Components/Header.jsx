@@ -3,7 +3,7 @@ import { Navbar, Nav,  Container} from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import logo from './DG.png';
 import Home from '../Pages/Home';
-import About from '../Pages/About';
+import Projects from '../Pages/About';
 import Education from '../Pages/Education';
 import Contact from '../Pages/Contact';
 
@@ -26,8 +26,8 @@ export default class Header extends Component {
             <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
             <Navbar.Collapse id='responsive-navbar-nav'>
             <Nav className='mr-auto'>
-                <Nav.Link href="/">Home</Nav.Link> 
-                <Nav.Link href="/about">My Projects</Nav.Link>  
+                <Nav.Link href="/">About me</Nav.Link> 
+                <Nav.Link href="/projects">My Projects</Nav.Link>  
                 <Nav.Link href="/education">Education</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
               </Nav>
@@ -38,7 +38,7 @@ export default class Header extends Component {
         <Router>
           <Routes>
             <Route exact path='/' element={<Home />}/>
-            <Route exact path='/about' element={<About />}/>
+            <Route exact path='/projects' element={<Projects />}/>
             <Route exact path='/education' element={<Education />}/>
             <Route exact path='/contact' element={<Contact />}/>
           </Routes>
